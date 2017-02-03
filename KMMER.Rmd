@@ -17,7 +17,7 @@ AAAG AAGG AGGC ATCA ATGC ATTG CAAA CATC CATT CCAT CCCA CGAC CTCA GACC GCCC GCGA
    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1 
 GCTC GGCT TCAA TCAT TGCC TGCG TTGC 
    1    1    1    1    1    1    1
-###If you want to know the kmer count for a specific kmer, youcan do this:
+###If you want to know the kmer count for a specific kmer, you can do this:
 ```{r}
 x['AAAG']
 ```
@@ -39,4 +39,4 @@ for i in range(len(seq) -k + 1):
 for kmer, count in kmers.items():
    print kmer + "\t" + str(count)
 ```
-#H3LL#H3LL00
+
