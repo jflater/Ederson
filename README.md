@@ -14,7 +14,17 @@ df <- Accession_numbers_for_Jared_and_Adina$Refseq
 write.(df, "IDs.txt", sep="\t")
 ```
 Retrive sequences from refseq:
+#G1:Rhizobium tropici CIAT 899 (+chromosome) 
+NC_020059.1+
+NC_020060.1
+NC_020061.1
+NC_020062.1
+#G2:
+NZ_AQHN01000095.1
+NZ_AQHN01000096.1
+NZ_AQHN1000084.1-could not find this on NCBI
 ```{bash}
+#Not working
 curl -s 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_017775,NC_017810&rettype=fasta'
 ```
 This would retrieve sequnces for NC_017775 and NC_017810, you can add more by seperating the IDs by a comma. Perhaps make a for loop for this. 
