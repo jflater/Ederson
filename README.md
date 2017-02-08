@@ -15,14 +15,14 @@ write.(df, "IDs.txt", sep="\t")
 ```
 Retrive sequences from refseq:
 #G1:Rhizobium tropici CIAT 899 (+chromosome) 
-*NC_020059.1+
-*NC_020060.1
-*NC_020061.1
-*NC_020062.1
+1. NC_020059.1+
+2. NC_020060.1
+3. NC_020061.1
+4. NC_020062.1
 #G2:
-*NZ_AQHN01000095.1
-*NZ_AQHN01000096.1
-*NZ_AQHN1000084.1-could not find this on NCBI
+5. NZ_AQHN01000095.1
+6. NZ_AQHN01000096.1
+7. NZ_AQHN1000084.1-could not find this on NCBI
 ```{bash}
 #Not working
 curl -s 'http://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=NC_017775,NC_017810&rettype=fasta'
