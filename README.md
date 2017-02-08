@@ -19,6 +19,8 @@ Retrive sequences from refseq:
 2. NC_020060.1
 3. NC_020061.1
 4. NC_020062.1
+
+
 ----
 #G2:Rhizobium freirei PRF 81
 5. NZ_AQHN01000095.1
