@@ -34,12 +34,20 @@ kmer_dict = kmer_count(ref_genome1, 150)
 ref_genome2 = consume_genome(fname_compare)
 print 'Consuming comparative genomes' + str(fname_compare)
 
-for seq in rolling_window(ref_genome2, 150):
-   if kmer_dict.has_key(seq):
-      continue
-   else:
-      print seq
+#for seq in rolling_window(ref_genome2, 150):
+#   if kmer_dict.has_key(seq):
+#      continue
+#   else:
+#      print seq
 
+for seq in rolling_window(ref_genome2, 150):
+	if kmer_dict.has_key(seq):
+		del kmer_dict[seq]
+f = open('r.f-mers.txt', 'w')
+for kmer, count in kmer_dict.items():
+	print kmer 
+	f.write(kmer + '/n')
+f.close 
 
 
 

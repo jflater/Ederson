@@ -23,8 +23,9 @@ for id in open(sys.argv[1]):
     gbk_out_file = os.path.join(sys.argv[2], id + ".fa")
     if os.path.exists(gbk_out_file):
         print "already fetched"
-
-    open(gbk_out_file, "w").write(urllib2.urlopen(url_template % id).read())
+    gbseq = urllib2.urlopen(url_template % id).read()
+    if not gbseq == "":
+    	open(gbk_out_file, "w").write(gbseq)
     print "Done"
     time.sleep(1.0/3)
 
