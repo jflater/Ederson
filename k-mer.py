@@ -44,16 +44,8 @@ ref_genome2 = consume_genome(fname_compare)
 for seq in rolling_window(ref_genome2, 150):
 	if kmer_dict.has_key(seq):
 		del kmer_dict[seq]
-<<<<<<< HEAD
-=======
-f = open('r.f-mers.txt', 'w')
 for kmer, count in kmer_dict.items():
 	print kmer 
-	f.write(kmer + '/n')
-f.close 
->>>>>>> 98eb1a0b6538e10c55c3373480ccbd7f397e2219
 
-for kmer, count in kmer_dict.items():
-	print kmer 
 
 
