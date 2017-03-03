@@ -27,19 +27,25 @@ def rolling_window(seq, window_size):
 
 fname = sys.argv[1:3]
 fname_compare = sys.argv[3:]
-print 'Consuming genomes' + str(fname)
+#print 'Consuming genomes' + str(fname)
+print '>' + str(fname)
 ref_genome1 = consume_genome(fname)
 kmer_dict = kmer_count(ref_genome1, 150)
 
 ref_genome2 = consume_genome(fname_compare)
-print 'Consuming comparative genomes' + str(fname_compare)
+#print 'Consuming comparative genomes' + str(fname_compare)
+
+#for seq in rolling_window(ref_genome2, 150):
+#   if kmer_dict.has_key(seq):
+#      continue
+#   else:
+#      print seq
 
 for seq in rolling_window(ref_genome2, 150):
-   if kmer_dict.has_key(seq):
-      continue
-   else:
-      print seq
+	if kmer_dict.has_key(seq):
+		del kmer_dict[seq]
 
-
+for kmer, count in kmer_dict.items():
+	print kmer 
 
 
