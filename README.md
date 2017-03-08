@@ -1,5 +1,5 @@
 # Ederson
-
+# Check size of .fa files in genome directories, some are less than 100b, indicating they lack actual sequences in the file and are most likely links to over view pages for that sequencing effort. 
 # List of accesion numbers in Accession_numbers_for_Jared_and_Adina.xlsx
 We are interested in IDing unique sequences in G1 and G2 that are not found in other rhizobium species as well as not found in RefSoil db or RefSeq db. Once we have those identified, we will id 19 by seq to target for primer design. 
 ![](ideas.jpg)
@@ -34,3 +34,4 @@ Find k-mers in r.tropici
 ```{bash}
 phython k-mer.py refrence_genomes/NC_02006*.fa refrence_genomes/NC_020059.1.fa refrence_genomes/NZ*.fa compare_genomes/*.fa > r.tropici.mers.fa
 ```
+
