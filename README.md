@@ -20,4 +20,5 @@ We are interested in IDing unique sequences in G1 and G2 that are not found in o
 
 The python script "k-mer.py" is a script that works through refrence and comparison genomes that we choose and finds unique sequnces of lenght k (k-mer) for this script k = 150 bp. 
 
-![](ideas.pdf)
+Download RefSoil from https://figshare.com/articles/RefSoil_Database/4362812
+![](ideas.jpg)
