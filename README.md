@@ -25,6 +25,12 @@ The python script "k-mer.py" is a script that works through refrence and compari
 
 Download RefSoil from https://figshare.com/articles/RefSoil_Database/4362812
 
+----
+Find k-mers in r.freire
 ```{bash}
 python k-mer.py refrence_genomes/NZ_AQHN01000095.1.fa refrence_genomes/NZ_AQHN01000096.1.fa refrence_genomes/NC*.fa compare_genomes/*.fa > r.freirei.mers.fa
+```
+Find k-mers in r.tropici
+```{bash}
+phython k-mer.py refrence_genomes/NC_02006*.fa refrence_genomes/NC_020059.1.fa refrence_genomes/NZ*.fa compare_genomes/*.fa > r.tropici.mers.fa
 ```
