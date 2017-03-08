@@ -1,0 +1,2 @@
+#ignore these files when pushing to github
+*.swp

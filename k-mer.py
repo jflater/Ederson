@@ -1,4 +1,4 @@
-#python k-mer.py [reference1.fa] [reference2.fa] [comparison1.fa] [comparison.fa] [comparison3.fa]
+#python k-mer.py [reference1.fa] [reference2.fa] [comparison1.fa] [comparison.fa] [comparison3.fa] > filename.fa
 import screed, sys
 
 def consume_genome(fname):
