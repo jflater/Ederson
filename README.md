@@ -42,7 +42,7 @@ In the compare_genomes directory
 
 ```{bash}
 mkdir metagenomes
-mv *00.* metagenomes/
+mv *000.* metagenomes/
 
 mkdir full_genomes
 mv *.fa full_genomes/
@@ -50,3 +50,8 @@ mv *.fa full_genomes/
 
 In the reference_genomes directory we see that there are no 00. genomes, indicating we have no masters in this list. 
 
+I need to get to this website for each ID: https://www.ncbi.nlm.nih.gov/Traces/wgs/?val=FMAH01&display=contigs&page=1
+
+Notice the FMAHO1.1.fsa_nt.gz this is the fasta file for each contig
+
+ftp://ftp.ncbi.nlm.nih.gov/sra/wgs_aux/FM/AH/FMAH01/FMAH01.1.fsa_nt.gz
