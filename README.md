@@ -38,3 +38,15 @@ phython k-mer.py refrence_genomes/NC_02006*.fa refrence_genomes/NC_020059.1.fa r
 
 There is no fasta file, this ID is a part of a whole shotgun sequencing project, we need to get the metagenomes from within this ID. 
 
+In the compare_genomes directory
+
+```{bash}
+mkdir metagenomes
+mv *00.* metagenomes/
+
+mkdir full_genomes
+mv *.fa full_genomes/
+```
+
+In the reference_genomes directory we see that there are no *00.* genomes, indicating we have no masters in this list. 
+
