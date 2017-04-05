@@ -55,3 +55,9 @@ I need to get to this website for each ID: https://www.ncbi.nlm.nih.gov/Traces/w
 Notice the FMAHO1.1.fsa_nt.gz this is the fasta file for each contig
 
 ftp://ftp.ncbi.nlm.nih.gov/sra/wgs_aux/FM/AH/FMAH01/FMAH01.1.fsa_nt.gz
+
+Let's try to trim the filenames to something closer to the project name:
+```{bash}
+ls metagenomes/*.fa | grep -oE '/[^/]+0' | cut -c2- | rev | cut -c8- | rev > test.txt
+```
+
