@@ -34,4 +34,7 @@ Find k-mers in r.tropici
 ```{bash}
 phython k-mer.py refrence_genomes/NC_02006*.fa refrence_genomes/NC_020059.1.fa refrence_genomes/NZ*.fa compare_genomes/*.fa > r.tropici.mers.fa
 ```
+# Notice that in https://github.com/jflater/Ederson/blob/master/compare_genomes/FMAF00000000.1.fa
+
+There is no fasta file, this ID is a part of a whole shotgun sequencing project, we need to get the metagenomes from within this ID. 
 
