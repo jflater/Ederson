@@ -58,6 +58,6 @@ ftp://ftp.ncbi.nlm.nih.gov/sra/wgs_aux/FM/AH/FMAH01/FMAH01.1.fsa_nt.gz
 
 Let's try to trim the filenames to something closer to the project name:
 ```{bash}
-ls metagenomes/*.fa | grep -oE '/[^/]+0' | cut -c2- | rev | cut -c8- | rev > test.txt
+ls metagenomes/*.fa | grep -oE '/[^/]+.' | cut -c2- | rev | cut -c4- | rev > test.txt
 ```
 
