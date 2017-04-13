@@ -1,4 +1,4 @@
-#python k-mer.py [reference1.fa] [reference2.fa] [comparison1.fa] [comparison.fa] [comparison3.fa] > filename.fa
+#python k-mer.py [reference1.fa] [comparison1.fa] [comparison.fa] [comparison3.fa] > filename.fa
 import screed, sys
 
 def consume_genome(fname):
@@ -22,8 +22,8 @@ def rolling_window(seq, window_size):
    for i in xrange(len(seq) - window_size + 1):
       yield seq[i:i+window_size]
 
-fname = sys.argv[1:3]
-fname_compare = sys.argv[3:]
+fname = sys.argv[1:2]
+fname_compare = sys.argv[2:]
 
 print '>' + str(fname)
 
